@@ -1,3 +1,4 @@
+" This is a test
 execute pathogen#infect()
 
 " Disable compatibility with vi which can cause unexpected issues.
