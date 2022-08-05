@@ -1,4 +1,3 @@
-" This is a test
 execute pathogen#infect()
 
 " Disable compatibility with vi which can cause unexpected issues.
@@ -31,11 +30,25 @@ syntax on
 " Add numbers to each line on the left-hand side.
 set number
 
-" Indentation
+" Highlight cursor line underneath the cursor horizontaly.
+"set cursorline
 
+" Highlight cursor line underneath the cursor vertically.
+"set cursorcolumn
+
+" Indentation
 set tabstop=2
 set shiftwidth=2
 set shiftwidth=2
+
+" Use higlighting when doing a search.
+set hlsearch
+
+" Show the mode you are on the last line.
+"set showmode
+
+" Enable auto completion menu after pressing TAB.
+"set wildmenu
 
 nnoremap <leader>J kJ
 
