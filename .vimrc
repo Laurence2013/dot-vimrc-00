@@ -76,3 +76,17 @@ hi Search ctermfg=Red
 
 " Auto save
 let g:session_autosave = 'yes'
+
+" Calling Plugins
+call plug#begin('~/.vim/plugged')
+
+Plug 'sheerun/vim-polyglot'
+Plug 'mattn/emmet-vim'
+
+call plug#end()
+
+" Fix files with prettier, and then ESLint.
+let g:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\   'javascript': ['eslint'],
+\}
